@@ -264,21 +264,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Typwriter
 document.addEventListener("DOMContentLoaded", function () {
-  // Teks yang ingin Anda ketik
   const textToType = "Hi, I'm Muhammad Haekal Hilmi";
-
-  // Elemen target
   const targetElement = document.getElementById("typewriter-heading");
-
-  let i = 0; // Indeks untuk melacak huruf
-
+  let i = 0;
   function typeWriter() {
     if (i < textToType.length) {
-      // Tambahkan satu huruf ke dalam elemen
       targetElement.innerHTML += textToType.charAt(i);
       i++;
-      // Atur jeda waktu sebelum huruf berikutnya muncul (dalam milidetik)
-      setTimeout(typeWriter, 100); // Kecepatan mengetik 100ms per huruf
+      setTimeout(typeWriter, 150);
     }
   }
 
